@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">AlexTestApp</string>
+    <string name="app_name" translatable="false">AlexTestApp</string>
+
+    <string name="canvas" translatable="false">Canvas</string>
 </resources>
