@@ -1,19 +1,16 @@
 package com.alexvijayraj.alextestapp.activity
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.RelativeLayout
 import com.alexvijayraj.alextestapp.R
-import com.alexvijayraj.alextestapp.constants.constants
 import kotlinx.android.synthetic.main.activity_main.*
 import android.util.TypedValue
-import android.os.Build
-import com.alexvijayraj.alextestapp.logger.Log
 
 var tests: List<RelativeLayout>? = null;
 
 val OPEN_CANVAS_ACTIVITY = 1
+val OPEN_SCREEN_SIZE_ACTIVITY = 2
 
 class MainActivity : BaseActivity() {
 
@@ -22,7 +19,7 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         //add relative layouts to list
-        tests = listOf(rlElement)
+        tests = listOf(rlElementCanvas, rlElementScreenSize)
 
         init()
     }
@@ -49,9 +46,13 @@ class MainActivity : BaseActivity() {
 
         relativeLayout.setOnClickListener {
 
-            if(relativeLayout == rlElement){
+            if(relativeLayout == rlElementCanvas){
 
                 openActivity(OPEN_CANVAS_ACTIVITY)
+
+            }else if(relativeLayout == rlElementScreenSize){
+
+                openActivity(OPEN_SCREEN_SIZE_ACTIVITY)
 
             }
 
@@ -64,6 +65,11 @@ class MainActivity : BaseActivity() {
         if(activityName == OPEN_CANVAS_ACTIVITY){
 
             val intent = Intent(this, CanvasActivity::class.java)
+            startActivityForResult(intent, 0)
+
+        }else if(activityName == OPEN_SCREEN_SIZE_ACTIVITY){
+
+            val intent = Intent(this, ScreenSizeActivity::class.java)
             startActivityForResult(intent, 0)
 
         }

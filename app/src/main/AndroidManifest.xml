@@ -22,7 +22,10 @@
 
         <activity android:name=".activity.CanvasActivity"/>
 
-        <!--add new Activity below-->
+        <activity android:name=".activity.ScreenSizeActivity"/>
+
+
+        <!--add new Activity above-->
 
     </application>
 

@@ -17,34 +17,60 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:id="@+id/rlElement"
+            android:id="@+id/rlElementCanvas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tv1"
+                android:id="@+id/tv1_1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/colorPrimaryDark"
                 />
 
             <TextView
-                android:id="@+id/tvRowName"
+                android:id="@+id/tvRowName1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/canvas"
                 android:textSize="20dp"
-                android:layout_below="@+id/tv1"
+                android:layout_below="@+id/tv1_1"
                 android:layout_marginStart="30dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlElementScreenSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tv2"
+                android:id="@+id/tv2_1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_below="@+id/tvRowName"
+                android:background="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/tvRowName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_size"
+                android:textSize="20dp"
+                android:layout_below="@+id/tv2_1"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tv2_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvRowName2"
                 android:background="@color/colorPrimaryDark"
                 />
 
