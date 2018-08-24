@@ -10,7 +10,8 @@ import android.util.TypedValue
 var tests: List<RelativeLayout>? = null;
 
 val OPEN_CANVAS_ACTIVITY = 1
-val OPEN_SCREEN_SIZE_ACTIVITY = 2
+val OPEN_CONSTRAINT_ACTIVITY = 2
+val OPEN_SCREEN_SIZE_ACTIVITY = 3
 
 class MainActivity : BaseActivity() {
 
@@ -19,7 +20,7 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         //add relative layouts to list
-        tests = listOf(rlElementCanvas, rlElementScreenSize)
+        tests = listOf(rlElementCanvas, rlElementConstraint, rlElementScreenSize)
 
         init()
     }
@@ -50,6 +51,10 @@ class MainActivity : BaseActivity() {
 
                 openActivity(OPEN_CANVAS_ACTIVITY)
 
+            }else if(relativeLayout == rlElementConstraint){
+
+                openActivity(OPEN_CONSTRAINT_ACTIVITY)
+
             }else if(relativeLayout == rlElementScreenSize){
 
                 openActivity(OPEN_SCREEN_SIZE_ACTIVITY)
@@ -65,6 +70,11 @@ class MainActivity : BaseActivity() {
         if(activityName == OPEN_CANVAS_ACTIVITY){
 
             val intent = Intent(this, CanvasActivity::class.java)
+            startActivityForResult(intent, 0)
+
+        }else if(activityName == OPEN_CONSTRAINT_ACTIVITY){
+
+            val intent = Intent(this, ConstraintLayoutActivity::class.java)
             startActivityForResult(intent, 0)
 
         }else if(activityName == OPEN_SCREEN_SIZE_ACTIVITY){

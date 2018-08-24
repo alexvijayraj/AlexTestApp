@@ -43,7 +43,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rlElementScreenSize"
+            android:id="@+id/rlElementConstraint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -58,7 +58,7 @@
                 android:id="@+id/tvRowName2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/screen_size"
+                android:text="@string/constraint_layout"
                 android:textSize="20dp"
                 android:layout_below="@+id/tv2_1"
                 android:layout_marginStart="30dp"
@@ -66,11 +66,37 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"/>
 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlElementScreenSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
             <TextView
-                android:id="@+id/tv2_2"
+                android:id="@+id/tv3_1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_below="@+id/tvRowName2"
+                android:background="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/tvRowName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_size"
+                android:textSize="20dp"
+                android:layout_below="@+id/tv3_1"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tv3_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvRowName3"
                 android:background="@color/colorPrimaryDark"
                 />
 

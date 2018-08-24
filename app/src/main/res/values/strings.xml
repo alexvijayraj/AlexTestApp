@@ -3,6 +3,8 @@
 
     <string name="canvas" translatable="false">Canvas</string>
 
+    <string name="constraint_layout" translatable="false">Constraint Layout Test</string>
+
     <string name="screen_size" translatable="false">Screen Size Finder</string>
     <string name="screen_size_placeholder" translatable="false">Screen Size Here:</string>
 </resources>

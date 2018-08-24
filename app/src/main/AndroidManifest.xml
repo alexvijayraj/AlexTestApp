@@ -22,8 +22,9 @@
 
         <activity android:name=".activity.CanvasActivity"/>
 
-        <activity android:name=".activity.ScreenSizeActivity"/>
+        <activity android:name=".activity.ConstraintLayoutActivity"/>
 
+        <activity android:name=".activity.ScreenSizeActivity"/>
 
         <!--add new Activity above-->
 
