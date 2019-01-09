@@ -26,6 +26,8 @@
 
         <activity android:name=".activity.ScreenSizeActivity"/>
 
+        <activity android:name=".activity.BottomSheetActivity"/>
+
         <!--add new Activity above-->
 
     </application>

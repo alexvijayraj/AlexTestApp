@@ -6,104 +6,125 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <LinearLayout
-        android:id="@+id/llScrollView"
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:id="@+id/rlElementCanvas"
+        <LinearLayout
+            android:id="@+id/llScrollView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv1_1"
+            <RelativeLayout
+                android:id="@+id/rlElementCanvas"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/colorPrimaryDark"
-                />
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/tvRowName1"
+                <TextView
+                    android:id="@+id/tv1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tvRowName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1_1"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/canvas"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlElementConstraint"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/canvas"
-                android:textSize="20dp"
-                android:layout_below="@+id/tv1_1"
-                android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_height="wrap_content">
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
 
-        <RelativeLayout
-            android:id="@+id/rlElementConstraint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvRowName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2_1"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/constraint_layout"
+                    android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/tv2_1"
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlElementScreenSize"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/colorPrimaryDark"
-                />
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/tvRowName2"
+                <TextView
+                    android:id="@+id/tv3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tvRowName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3_1"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/screen_size"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBottomSheet"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/constraint_layout"
-                android:textSize="20dp"
-                android:layout_below="@+id/tv2_1"
-                android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_height="wrap_content">
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
 
-        <RelativeLayout
-            android:id="@+id/rlElementScreenSize"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvRowName4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv4_1"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/bottom_sheet"
+                    android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/tv3_1"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/colorPrimaryDark"
-                />
+                <TextView
+                    android:id="@+id/tv4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvRowName4"
+                    android:background="@color/colorPrimaryDark" />
 
-            <TextView
-                android:id="@+id/tvRowName3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/screen_size"
-                android:textSize="20dp"
-                android:layout_below="@+id/tv3_1"
-                android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
 
-            <TextView
-                android:id="@+id/tv3_2"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@+id/tvRowName3"
-                android:background="@color/colorPrimaryDark"
-                />
+        </LinearLayout>
 
-        </RelativeLayout>
-
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

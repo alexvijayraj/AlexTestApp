@@ -7,4 +7,6 @@
 
     <string name="screen_size" translatable="false">Screen Size Finder</string>
     <string name="screen_size_placeholder" translatable="false">Screen Size Here:</string>
+
+    <string name="bottom_sheet" translatable="false">Bottom Sheet demo</string>
 </resources>

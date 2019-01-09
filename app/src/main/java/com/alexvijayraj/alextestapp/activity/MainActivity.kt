@@ -12,6 +12,7 @@ var tests: List<RelativeLayout>? = null;
 val OPEN_CANVAS_ACTIVITY = 1
 val OPEN_CONSTRAINT_ACTIVITY = 2
 val OPEN_SCREEN_SIZE_ACTIVITY = 3
+val OPEN_BOTTOM_SHEET_ACTIVITY = 4
 
 class MainActivity : BaseActivity() {
 
@@ -20,7 +21,7 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         //add relative layouts to list
-        tests = listOf(rlElementCanvas, rlElementConstraint, rlElementScreenSize)
+        tests = listOf(rlElementCanvas, rlElementConstraint, rlElementScreenSize, rlBottomSheet)
 
         init()
     }
@@ -59,6 +60,10 @@ class MainActivity : BaseActivity() {
 
                 openActivity(OPEN_SCREEN_SIZE_ACTIVITY)
 
+            }else if(relativeLayout == rlBottomSheet){
+
+                openActivity(OPEN_BOTTOM_SHEET_ACTIVITY)
+
             }
 
         }
@@ -80,6 +85,11 @@ class MainActivity : BaseActivity() {
         }else if(activityName == OPEN_SCREEN_SIZE_ACTIVITY){
 
             val intent = Intent(this, ScreenSizeActivity::class.java)
+            startActivityForResult(intent, 0)
+
+        }else if(activityName == OPEN_BOTTOM_SHEET_ACTIVITY){
+
+            val intent = Intent(this, BottomSheetActivity::class.java)
             startActivityForResult(intent, 0)
 
         }
